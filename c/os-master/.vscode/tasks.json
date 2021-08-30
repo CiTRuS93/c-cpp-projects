@@ -1,0 +1,72 @@
+{
+
+    "version": "2.0.0",
+
+    "type":"shell",
+
+    "echoCommand": true,
+
+    "tasks": [
+
+        {
+
+            "label": "xv6 build",
+
+            "command": "make",
+
+            "problemMatcher": [
+
+                "$gcc"
+
+            ],
+
+            "group": {
+
+                "kind": "build",
+
+                "isDefault": true
+
+            }
+
+        }, 
+        {
+
+            "label": "xv6 clean",
+
+            "command": "make clean",
+
+            "problemMatcher": [
+
+                "$gcc"
+
+            ],
+
+            "group": {
+
+                "kind": "build",
+
+                "isDefault": true
+
+            }
+
+        },
+
+ 
+
+        {
+
+            "label": "xv6 run qemu-nox-gdb",
+
+            "command": "make qemu-nox-gdb",
+
+            "problemMatcher": [
+
+                "$tsc"
+
+            ],
+
+        }
+
+    ]
+
+} 

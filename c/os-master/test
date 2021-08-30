@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+methods=('NFUA' 'LAPA' 'SCFIFO' 'AQ' 'NONE')
+echo "Hello, world!"
+
+for method in "${methods[@]}"
+do
+    make clean
+    echo $method
+    make qemu SELECTION=$method
+    wait 
+    
+done
