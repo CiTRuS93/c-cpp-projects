@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+c++/spl/chat_client/Client/bin/*
+c++/arduino-raspi-lora-master/*.yml
